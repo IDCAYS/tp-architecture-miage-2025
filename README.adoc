@@ -79,21 +79,21 @@ docker run -it -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
 ```
 *Expliquer cette ligne de commande (y compris les options utilisées)*
 
-docker run : Lance un nouveau conteneur basé sur une image spécifiée.
+* docker run : Lance un nouveau conteneur basé sur une image spécifiée.
 -it :
 -i (interactive) : Maintient l'entrée standard (stdin) ouverte pour interagir avec le conteneur.
 -t (pseudo-TTY) : Alloue un terminal virtuel, utile pour interagir avec le conteneur.
 
--e POSTGRES_PASSWORD=password :
+* -e POSTGRES_PASSWORD=password :
 Définit une variable d'environnement à l'intérieur du conteneur.
 POSTGRES_PASSWORD est utilisé par l'image officielle PostgreSQL pour définir le mot de passe de l'utilisateur postgres.
 Ici, le mot de passe est password 
 
--p 5432:5432 :
+* -p 5432:5432 :
 Configure le mappage des ports entre la machine hôte et le conteneur.
 5432:5432 signifie que le port 5432 du conteneur (port par défaut de PostgreSQL) est exposé et accessible via le port 5432 de l'hôte.
 
-postgres :
+* postgres :
 Spécifie l'image Docker à utiliser.
 S'il n'est pas déjà présent localement, Docker va télécharger l'image officielle PostgreSQL depuis Docker Hub.
 
@@ -184,7 +184,7 @@ _Temps estimé : 20 mins_
 
 *Quels types de tests devra-t-on écrire pour les adaptateurs ?* 
 
-*Web Adapter : 
+* Web Adapter : 
 
 Test de Controller 
 
@@ -198,7 +198,7 @@ Valider la sérialisation / désérialisation JSON <-> objets Java.
 
 Tester les paramètres de requête, les corps de requête, les valeurs de retour.
 
-*Persistence adapter : 
+* Persistence adapter : 
 
 Test de Mapping
 
@@ -210,7 +210,7 @@ Tester les opérations CRUD réelles sur une base (souvent en mémoire comme H2)
 
 S’assurer que les requêtes personnalisées renvoient les bonnes données.
 
-*External System Adapter : 
+* External System Adapter : 
 
 Test d'intégration
 
