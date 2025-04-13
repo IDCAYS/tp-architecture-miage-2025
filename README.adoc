@@ -1,11 +1,8 @@
 # TP MIAGE conception logicielle
 
-## Nom du(des) étudiant(e)(s) de ce monôme/binôme 
-WARNING: NE PAS OUBLIER DE MENTIONNER LES DEUX NOMS SI VOUS ETES EN BINOME!
+Rebours Julien
 
-#XXX# (et #YYY#)
-
-Commentaires éventuels des étudiants : #XXXXXX#
+Commentaires éventuels des étudiants : Aucun
 
 ## Pré-requis 
 
